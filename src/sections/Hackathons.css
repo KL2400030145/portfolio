@@ -1,0 +1,115 @@
+.hackathons {
+  background: linear-gradient(135deg, var(--secondary-bg), var(--tertiary-bg));
+  padding: 6rem 0;
+}
+
+.hackathons-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.hackathon-item {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  position: relative;
+  padding-left: 4rem;
+  border: 1px solid var(--border-color);
+}
+
+.hackathon-number {
+  position: absolute;
+  left: 1rem;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent-color);
+  color: var(--primary-bg);
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.hackathon-content {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-grow: 1;
+}
+
+.hackathon-icon {
+  color: var(--accent-color);
+  min-width: 20px;
+}
+
+.hackathon-item h3 {
+  color: var(--text-primary);
+  font-size: 1rem;
+  margin: 0;
+}
+
+.participation-badge {
+  padding: 0.4rem 0.8rem;
+  background: linear-gradient(135deg, rgba(0, 255, 136, 0.2), rgba(0, 212, 255, 0.1));
+  border: 1px solid var(--success-color);
+  color: var(--success-color);
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hackathons {
+    padding: 4rem 0;
+  }
+
+  .hackathons-list {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .hackathon-item {
+    padding: 1.25rem;
+    padding-left: 3.5rem;
+  }
+
+  .hackathon-item h3 {
+    font-size: 0.95rem;
+  }
+
+  .hackathon-number {
+    width: 35px;
+    height: 35px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hackathon-item {
+    padding: 1rem;
+    padding-left: 3rem;
+    gap: 1rem;
+  }
+
+  .hackathon-item h3 {
+    font-size: 0.9rem;
+  }
+
+  .hackathon-number {
+    width: 30px;
+    height: 30px;
+    left: 0.75rem;
+    font-size: 0.8rem;
+  }
+
+  .participation-badge {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.7rem;
+  }
+}

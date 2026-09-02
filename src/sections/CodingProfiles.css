@@ -1,0 +1,84 @@
+.coding-profiles {
+  background: linear-gradient(135deg, var(--secondary-bg), var(--primary-bg));
+  padding: 6rem 0;
+}
+
+.profiles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.profile-icon {
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+}
+
+.profile-card h3 {
+  color: var(--text-primary);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.profile-card .username {
+  color: var(--accent-color);
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.username-note {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  margin: 0;
+  font-family: 'Courier New', monospace;
+}
+
+.profile-card .btn {
+  align-self: center;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .profiles-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .profile-card {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .coding-profiles {
+    padding: 4rem 0;
+  }
+
+  .profiles-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .profiles-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-card {
+    padding: 1.5rem;
+  }
+
+  .profile-card h3 {
+    font-size: 1rem;
+  }
+}
