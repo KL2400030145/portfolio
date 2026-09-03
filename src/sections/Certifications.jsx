@@ -68,6 +68,12 @@ export default function Certifications() {
                   </div>
                 </div>
               )}
+
+              {cert.url && (
+                <a href={cert.url} target="_blank" rel="noopener noreferrer" className="btn btn-small">
+                  View Certificate
+                </a>
+              )}
             </motion.div>
           ))}
         </motion.div>

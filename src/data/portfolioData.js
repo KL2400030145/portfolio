@@ -107,13 +107,13 @@ export const portfolioData = {
       title: "AWS Certified Cloud Practitioner",
       issuer: "Amazon Web Services",
       date: null,
-      url: null
+      url: "https://www.credly.com/badges/236c57de-c36c-4050-b612-fcffa945f5b6/public_url"
     },
     {
       title: "GitHub Copilot Certification",
       issuer: "GitHub",
       date: null,
-      url: null
+      url: "https://learn.microsoft.com/en-us/users/moghallithishmabegum-5327/credentials/bf54117e4dab4752"
     },
     {
       title: "Cambridge Linguaskill General",
