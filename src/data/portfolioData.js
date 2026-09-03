@@ -186,7 +186,7 @@ export const portfolioData = {
     { command: "whoami", response: "Lithishma Begum" },
     { command: "role", response: "CSE Student" },
     { command: "focus", response: "Software Development" },
-    { command: "interests", response: "Cloud Computing | AI | Web Development" },
+    { command: "interests", response: "Data Science | Big Data Analytics | AI/ML | Cloud Computing" },
     { command: "status", response: "Learning & Building" }
   ]
 };
