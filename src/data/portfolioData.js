@@ -29,14 +29,14 @@ export const portfolioData = {
     {
       institution: "Sri Sarada Junior College",
       degree: "Intermediate",
-      period: "",
+      period: "2022 – 2024",
       score: "90.7%",
       scoreType: "Percentage"
     },
     {
       institution: "St. John's English Medium High School",
       degree: "Schooling",
-      period: "",
+      period: "2021 – 2022",
       score: "94.6%",
       scoreType: "Percentage"
     }
