@@ -129,10 +129,12 @@ export const portfolioData = {
   ],
   
   hackathons: [
-    "Smart India Hackathon (SIH)",
+    "Smart India Hackathon (SIH) 2025",
+    "Smart India Hackathon (SIH) 2026",
     "Guidewire DevTrails Hackathon",
-    "VR Siddhartha Engineering College Hackathon",
-    "Full Stack Development Hackathon"
+    "CodeFusion Hackathon",
+    "Full Stack Development Hackathon",
+    "TechGig Hackathon"
   ],
   
   activities: [
