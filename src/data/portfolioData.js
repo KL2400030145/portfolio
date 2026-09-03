@@ -81,8 +81,7 @@ export const portfolioData = {
       ],
       featured: true,
       github: null,
-      demo: null,
-      note: "Currently in development"
+      demo: null
     },
     {
       id: 3,
