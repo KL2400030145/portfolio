@@ -80,7 +80,7 @@ export default function Hero() {
           >
             <motion.div variants={itemVariants} className="hero-greeting">
               <span className="accent-symbol">{'<'}</span>
-              <span>Hello World</span>
+              <span>Code. Learn. Build. </span>
               <span className="accent-symbol">{'/>'}</span>
             </motion.div>
 
