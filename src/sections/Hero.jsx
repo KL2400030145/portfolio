@@ -64,10 +64,6 @@ export default function Hero() {
     },
   };
 
-  const handleDownloadResume = () => {
-    alert('Resume download functionality would be implemented with actual resume file');
-  };
-
   return (
     <section id="home" className="hero">
       <div className="container">
@@ -104,10 +100,10 @@ export default function Hero() {
               <a href="#projects" className="btn btn-filled">
                 View Projects
               </a>
-              <button className="btn" onClick={handleDownloadResume}>
+              <a href="/Resume.pdf" download="Moghal_Lithishma_Begum_Resume.pdf" className="btn">
                 <Download size={18} />
                 Download Resume
-              </button>
+              </a>
               <a href="#contact" className="btn">
                 Contact Me
               </a>
