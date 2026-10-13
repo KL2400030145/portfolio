@@ -129,12 +129,10 @@ Global styles are in `src/styles/global.css` with CSS variables:
 
 Each section has its own CSS file for component-specific styling.
 
-### Adding Resume
+### Updating the Resume
 
-To add a resume download feature:
-
-1. Place your resume PDF in the `public` folder
-2. Update the `handleDownloadResume` function in `Hero.jsx`
+Replace `public/resume.pdf` with the current resume PDF. The hero section provides
+a view link that opens the PDF in a new tab and a download link to the same file.
 
 ## 🎨 Color Scheme
 

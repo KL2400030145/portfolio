@@ -11,7 +11,7 @@ export default function Skills() {
     'Core CS': Zap,
     'Cloud & Infrastructure': Cloud,
     'Backend & APIs': Database,
-    'Database': Database,
+    'Databases': Database,
     'Soft Skills': Zap,
   };
 

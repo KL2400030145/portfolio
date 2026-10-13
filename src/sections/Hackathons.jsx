@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Code2 } from 'lucide-react';
+import { Code, Code2 } from 'lucide-react';
 import { portfolioData } from '../data/portfolioData';
 import './Hackathons.css';
 
@@ -39,18 +39,45 @@ export default function Hackathons() {
           viewport={{ once: true }}
         >
           {portfolioData.hackathons.map((hackathon, index) => (
-            <motion.div
-              key={index}
+            <motion.article
+              key={hackathon.name}
               variants={itemVariants}
-              className="hackathon-item card"
+              className={`hackathon-item card${hackathon.featured ? ' hackathon-featured' : ''}`}
             >
-              <div className="hackathon-number">{index + 1}</div>
+              <div className="hackathon-number" aria-hidden="true">{index + 1}</div>
+              {hackathon.featured && <span className="hackathon-featured-label">Featured</span>}
               <div className="hackathon-content">
-                <Code2 className="hackathon-icon" size={20} />
-                <h3>{hackathon}</h3>
+                <div className="hackathon-title-row">
+                  <Code2 className="hackathon-icon" size={20} aria-hidden="true" />
+                  <div>
+                    <h3>
+                      {hackathon.name}
+                      {hackathon.team && ` — ${hackathon.team}`}
+                    </h3>
+                    {hackathon.participation && (
+                      <span className="hackathon-team-type">{hackathon.participation}</span>
+                    )}
+                  </div>
+                </div>
+                {hackathon.description && (
+                  <p className="hackathon-description">{hackathon.description}</p>
+                )}
+                {hackathon.github && (
+                  <a
+                    href={hackathon.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-small"
+                  >
+                    <Code size={14} />
+                    GitHub
+                  </a>
+                )}
               </div>
-              <span className="participation-badge">Participant</span>
-            </motion.div>
+              {!hackathon.featured && (
+                <span className="participation-badge">Participant</span>
+              )}
+            </motion.article>
           ))}
         </motion.div>
       </div>

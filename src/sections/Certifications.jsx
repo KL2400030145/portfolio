@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Award } from 'lucide-react';
+import { Award, ExternalLink } from 'lucide-react';
 import { portfolioData } from '../data/portfolioData';
 import './Certifications.css';
 
@@ -71,7 +71,18 @@ export default function Certifications() {
 
               {cert.url && (
                 <a href={cert.url} target="_blank" rel="noopener noreferrer" className="btn btn-small">
-                  View Certificate
+                  {cert.linkLabel || 'View Certificate'}
+                </a>
+              )}
+              {cert.infoUrl && (
+                <a
+                  href={cert.infoUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="cert-info-link"
+                >
+                  <ExternalLink size={14} />
+                  Official certification information
                 </a>
               )}
             </motion.div>

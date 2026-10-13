@@ -43,12 +43,12 @@ export const portfolioData = {
   ],
   
   skills: {
-    "Programming Languages": ["Java", "Python", "C"],
+    "Programming Languages": ["C", "Python", "Java"],
     "Web Technologies": ["HTML5", "CSS3", "JavaScript", "React.js"],
     "Core CS": ["Data Structures", "OOP", "DBMS", "Operating Systems", "Computer Networks"],
-    "Cloud & Infrastructure": ["AWS", "GCP"],
+    "Cloud & Infrastructure": ["AWS", "Google Cloud Platform"],
     "Backend & APIs": ["Spring Boot", "REST APIs"],
-    "Database": ["MySQL"],
+    "Databases": ["MySQL", "SQL"],
     "Soft Skills": ["Problem Solving", "Communication", "Teamwork", "Leadership"]
   },
   
@@ -57,15 +57,14 @@ export const portfolioData = {
       id: 1,
       title: "Agrisustain – Smart Agriculture Platform",
       technologies: ["HTML", "CSS", "JavaScript"],
-      description: "Developed a responsive web platform connecting farmers directly with buyers.",
+      description: "A responsive platform that helps farmers connect directly with buyers and discover products.",
       keyPoints: [
-        "Reduced dependency on intermediaries through direct communication",
-        "Promoted fair pricing between farmers and buyers",
-        "Designed an intuitive interface to improve accessibility and user experience"
+        "Connects farmers directly with buyers",
+        "Helps farmers discover products"
       ],
       featured: false,
-      github: null,
-      demo: null
+      github: "https://github.com/KL2400030145/Agri-Sustain",
+      demo: "https://agri-sustain.vercel.app"
     },
     {
       id: 2,
@@ -79,7 +78,7 @@ export const portfolioData = {
         "Skill-gap identification",
         "Personalized career improvement insights"
       ],
-      featured: true,
+      featured: false,
       github: null,
       demo: null
     },
@@ -87,17 +86,17 @@ export const portfolioData = {
       id: 3,
       title: "Election Monitoring System",
       technologies: ["Java", "HTML", "CSS", "MySQL"],
-      description: "Developed a web-based election monitoring and complaint registration system.",
+      description: "A web-based application concept for election-related complaint registration and tracking, supporting digital reporting and complaint monitoring.",
       keyPoints: [
         "Complaint registration",
         "Complaint tracking",
         "Digital reporting",
-        "Transparent monitoring",
-        "Responsive interface"
+        "Complaint monitoring"
       ],
       featured: false,
-      github: null,
-      demo: null
+      github: "https://github.com/KL2400030145/election-monitoring-system",
+      demo: null,
+      demoStatus: "Demo Not Deployed Yet"
     }
   ],
   
@@ -106,16 +105,20 @@ export const portfolioData = {
       title: "AWS Certified Cloud Practitioner",
       issuer: "Amazon Web Services",
       date: null,
-      url: "https://www.credly.com/badges/236c57de-c36c-4050-b612-fcffa945f5b6/public_url"
+      url: "https://www.credly.com/badges/236c57de-c36c-4050-b612-fcffa945f5b6/public_url",
+      linkLabel: "Verify Certificate",
+      infoUrl: "https://aws.amazon.com/certification/certified-cloud-practitioner/"
     },
     {
       title: "GitHub Copilot Certification",
       issuer: "GitHub",
       date: null,
-      url: "https://learn.microsoft.com/en-us/users/moghallithishmabegum-5327/credentials/bf54117e4dab4752"
+      url: "https://learn.microsoft.com/en-us/users/moghallithishmabegum-5327/credentials/bf54117e4dab4752",
+      linkLabel: "View Certification",
+      infoUrl: "https://learn.microsoft.com/en-us/credentials/certifications/github-copilot/"
     },
     {
-      title: "Cambridge Linguaskill General",
+      title: "Cambridge Linguaskill General — B1",
       issuer: "Cambridge English",
       level: "B1",
       details: {
@@ -129,12 +132,19 @@ export const portfolioData = {
   ],
   
   hackathons: [
-    "Smart India Hackathon (SIH) 2025",
-    "Smart India Hackathon (SIH) 2026",
-    "Guidewire DevTrails Hackathon",
-    "CodeFusion Hackathon",
-    "Full Stack Development Hackathon",
-    "TechGig Hackathon"
+    {
+      name: "Smart India Hackathon 2026",
+      team: "Skill Sale",
+      description: "Contributed to the Skill Sale team project and collaborated on project planning and solution design.",
+      participation: "Team Project",
+      github: "https://github.com/KL2400030145/SkillSale",
+      featured: true
+    },
+    { name: "Smart India Hackathon (SIH) 2025" },
+    { name: "Guidewire DevTrails Hackathon" },
+    { name: "CodeFusion Hackathon" },
+    { name: "Full Stack Development Hackathon" },
+    { name: "TechGig Hackathon" }
   ],
   
   activities: [

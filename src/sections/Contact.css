@@ -90,11 +90,23 @@
 }
 
 .contact-note {
-  background: linear-gradient(135deg, rgba(0, 212, 255, 0.05), rgba(0, 255, 136, 0.03));
+  background: linear-gradient(135deg, rgba(103, 232, 249, 0.065), rgba(167, 139, 250, 0.07));
   border: 1px solid var(--border-color);
   padding: 1.5rem;
   border-radius: 8px;
   text-align: center;
+}
+
+.info-item,
+.contact-note {
+  border-color: rgba(165, 180, 210, 0.14);
+}
+
+.contact-actions {
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+  border: 1px solid rgba(165, 180, 210, 0.13);
+  border-radius: 20px;
+  background: linear-gradient(145deg, rgba(18, 24, 48, 0.7), rgba(18, 16, 40, 0.58));
 }
 
 .contact-note p {

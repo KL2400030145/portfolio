@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { Code, Mail, Download, ChevronDown, ExternalLink } from 'lucide-react';
+import { Code, Mail, Download, ChevronDown, ExternalLink, Eye } from 'lucide-react';
 import { portfolioData } from '../data/portfolioData';
 import profileImage from '../assets/Screenshot 2026-09-02 215754.png';
 import './Hero.css';
@@ -100,7 +100,11 @@ export default function Hero() {
               <a href="#projects" className="btn btn-filled">
                 View Projects
               </a>
-              <a href="/Resume.pdf" download="Moghal_Lithishma_Begum_Resume.pdf" className="btn">
+              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="btn">
+                <Eye size={18} />
+                View Resume
+              </a>
+              <a href="/resume.pdf" download="Lithishma_Begum_Resume_2400030145.pdf" className="btn">
                 <Download size={18} />
                 Download Resume
               </a>

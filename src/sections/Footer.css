@@ -1,8 +1,9 @@
 .footer {
-  background: var(--primary-bg);
-  border-top: 1px solid var(--border-color);
+  background: linear-gradient(180deg, rgba(8, 10, 24, 0.55), rgba(6, 8, 19, 0.92));
+  border-top: 1px solid rgba(165, 180, 210, 0.13);
   padding: 4rem 0 2rem;
   color: var(--text-secondary);
+  backdrop-filter: blur(12px);
 }
 
 .footer-content {

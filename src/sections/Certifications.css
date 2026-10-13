@@ -15,6 +15,27 @@
   align-items: center;
   text-align: center;
   padding: 2rem;
+  justify-content: flex-start;
+  min-height: 270px;
+  background: linear-gradient(145deg, rgba(20, 28, 53, 0.8), rgba(22, 18, 45, 0.7));
+}
+
+.cert-card .btn {
+  margin-top: auto;
+}
+
+.cert-card .cert-details + .btn {
+  margin-top: 1.25rem;
+}
+
+.cert-info-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  margin-top: 0.85rem;
+  color: var(--text-secondary);
+  font-size: 0.82rem;
 }
 
 .cert-icon {
