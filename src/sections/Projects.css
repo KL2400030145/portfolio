@@ -176,7 +176,14 @@
 .project-card .project-description {
   font-size: 0.95rem;
   margin-bottom: 1.5rem;
-  min-height: 4.5rem;
+  min-height: 0;
+}
+
+.project-description-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
 }
 
 .project-card h3 {

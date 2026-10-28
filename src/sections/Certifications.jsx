@@ -46,7 +46,7 @@ export default function Certifications() {
             >
               <Award className="cert-icon" size={28} />
               <h3>{cert.title}</h3>
-              <p className="cert-issuer">{cert.issuer}</p>
+              {cert.issuer && <p className="cert-issuer">{cert.issuer}</p>}
 
               {cert.details && (
                 <div className="cert-details">

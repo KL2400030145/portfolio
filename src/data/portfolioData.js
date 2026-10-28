@@ -1,175 +1,154 @@
 export const portfolioData = {
   name: "Moghal Lithishma Begum",
-  title: "Computer Science Engineering Student",
-  subtitle: "Software Developer | Cloud Enthusiast | Technology Learner",
+  title: "Computer Science and Engineering Student",
+  subtitle: "Data Science | Big Data Analytics",
   location: "Vijayawada, Andhra Pradesh",
   phone: "+91 9505907889",
   email: "moghallithishma@gmail.com",
-  
-  intro: "Computer Science Engineering undergraduate at KL University with a CGPA of 9.59/10, passionate about software development and emerging technologies. Familiar with Java, Python, React.js and MySQL, with hands-on experience developing web applications and practical software solutions.",
-  
-  aboutText: "I am a Computer Science Engineering undergraduate at KL University with a strong interest in software development, cloud computing, and emerging technologies. I enjoy building practical applications, learning new technologies, and solving real-world problems through software.",
-  
+
+  intro: "Third-year Computer Science and Engineering student at KL University, specializing in Data Science and Big Data Analytics. Experienced in developing web applications, REST APIs, and software projects using Java, Python, React.js, and Spring Boot. Seeking internship opportunities in software engineering, data science, and AI/ML.",
+
+  aboutText: "Third-year Computer Science and Engineering student at KL University, specializing in Data Science and Big Data Analytics. Experienced in developing web applications, REST APIs, and software projects using Java, Python, React.js, and Spring Boot. Seeking internship opportunities in software engineering, data science, and AI/ML.",
+
   interests: [
-    "Software Development",
-    "Web Development",
-    "Cloud Computing",
-    "AI-powered Applications",
-    "Continuous Learning"
+    "Software Engineering",
+    "Data Science",
+    "AI/ML",
+    "Cloud Computing"
   ],
-  
+
   education: [
     {
       institution: "KL University",
-      degree: "Bachelor of Technology – Computer Science and Engineering",
-      period: "2024 – 2028",
+      degree: "B.Tech in Computer Science and Engineering",
+      period: "Jul 2024 – May 2028",
       score: "9.59/10",
       scoreType: "CGPA"
     },
     {
       institution: "Sri Sarada Junior College",
-      degree: "Intermediate",
-      period: "2022 – 2024",
+      degree: "Intermediate (MPC)",
+      period: "Jun 2022 – Apr 2024",
       score: "90.7%",
-      scoreType: "Percentage"
-    },
-    {
-      institution: "St. John's English Medium High School",
-      degree: "Schooling",
-      period: "2021 – 2022",
-      score: "94.6%",
       scoreType: "Percentage"
     }
   ],
-  
+
   skills: {
-    "Programming Languages": ["C", "Python", "Java"],
-    "Web Technologies": ["HTML5", "CSS3", "JavaScript", "React.js"],
-    "Core CS": ["Data Structures", "OOP", "DBMS", "Operating Systems", "Computer Networks"],
-    "Cloud & Infrastructure": ["AWS", "Google Cloud Platform"],
-    "Backend & APIs": ["Spring Boot", "REST APIs"],
-    "Databases": ["MySQL", "SQL"],
-    "Soft Skills": ["Problem Solving", "Communication", "Teamwork", "Leadership"]
+    Programming: ["C", "Java", "Python"],
+    Frontend: ["HTML", "CSS", "JavaScript", "React.js"],
+    Backend: ["Spring Boot", "REST APIs", "Microservices", "FastAPI"],
+    Databases: ["MySQL", "PostgreSQL"],
+    "Cloud and Tools": ["AWS", "Docker", "Git", "GitHub", "Vercel", "Render"],
+    "Core CS": ["Data Structures and Algorithms", "DBMS", "Operating Systems", "Computer Networks"],
+    "Data Science": ["Machine Learning Fundamentals", "Data Analysis"]
   },
-  
+
   projects: [
     {
       id: 1,
-      title: "Agrisustain – Smart Agriculture Platform",
-      technologies: ["HTML", "CSS", "JavaScript"],
-      description: "A responsive platform that helps farmers connect directly with buyers and discover products.",
-      keyPoints: [
-        "Connects farmers directly with buyers",
-        "Helps farmers discover products"
+      title: "ScamShield – Scam Detection Platform",
+      technologies: ["React.js", "Spring Boot", "FastAPI", "MySQL", "Docker", "Vercel", "Render"],
+      description: [
+        "Developed a full-stack scam detection platform using React.js, Spring Boot, FastAPI, and MySQL to analyze suspicious messages and identify potential scam indicators through rule-based risk scoring.",
+        "Integrated REST APIs between the frontend, backend, and Python analysis service, and deployed the application using Vercel and Render with Docker-based containerization."
       ],
-      featured: false,
-      github: "https://github.com/KL2400030145/Agri-Sustain",
-      demo: "https://agri-sustain.vercel.app"
+      github: "https://github.com/KL2400030145/Scam-Shield",
+      demo: "https://scam-shield-pi-brown.vercel.app/"
     },
     {
       id: 2,
-      title: "CareerMatch AI – AI-Powered Resume & Job Matching Platform",
-      technologies: ["React.js", "Spring Boot", "Python", "MySQL"],
-      description: "AI-powered platform to analyze resumes and match candidates with relevant job opportunities.",
-      keyPoints: [
-        "Resume analysis",
-        "Skill extraction",
-        "Job-description matching",
-        "Skill-gap identification",
-        "Personalized career improvement insights"
+      title: "Student Performance Prediction System",
+      technologies: ["Python", "Streamlit", "Machine Learning"],
+      description: [
+        "Built a Python-based machine learning application with Streamlit to analyze student performance data and generate predictions from relevant academic inputs.",
+        "Designed an interactive dashboard to present prediction results and performance insights through a user-friendly interface."
       ],
-      featured: false,
-      github: null,
-      demo: null
+      github: "https://github.com/KL2400030145/student-performance-prediction",
+      demo: "https://student-performance-prediction-system-l.streamlit.app/"
     },
     {
       id: 3,
-      title: "Election Monitoring System",
-      technologies: ["Java", "HTML", "CSS", "MySQL"],
-      description: "A web-based application concept for election-related complaint registration and tracking, supporting digital reporting and complaint monitoring.",
-      keyPoints: [
-        "Complaint registration",
-        "Complaint tracking",
-        "Digital reporting",
-        "Complaint monitoring"
+      title: "AgriSustain – Sustainable Agriculture Platform",
+      technologies: ["HTML", "CSS", "JavaScript", "Vercel"],
+      description: [
+        "Developed a web-based platform focused on sustainable agriculture, organizing agricultural information in an accessible and user-friendly interface.",
+        "Implemented responsive frontend components using web technologies and deployed the application on Vercel to make the platform accessible online."
       ],
-      featured: false,
-      github: "https://github.com/KL2400030145/election-monitoring-system",
-      demo: null,
-      demoStatus: "Demo Not Deployed Yet"
+      github: "https://github.com/KL2400030145/Agri-Sustain",
+      demo: "https://agri-sustain.vercel.app/"
     }
   ],
-  
+
   certifications: [
     {
       title: "AWS Certified Cloud Practitioner",
-      issuer: "Amazon Web Services",
-      date: null,
+      issuer: "AWS",
       url: "https://www.credly.com/badges/236c57de-c36c-4050-b612-fcffa945f5b6/public_url",
-      linkLabel: "Verify Certificate",
-      infoUrl: "https://aws.amazon.com/certification/certified-cloud-practitioner/"
+      linkLabel: "Verify Credential"
     },
     {
-      title: "GitHub Copilot Certification",
-      issuer: "GitHub",
-      date: null,
+      title: "Microsoft Learn Credential",
+      issuer: "Microsoft Learn",
       url: "https://learn.microsoft.com/en-us/users/moghallithishmabegum-5327/credentials/bf54117e4dab4752",
-      linkLabel: "View Certification",
-      infoUrl: "https://learn.microsoft.com/en-us/credentials/certifications/github-copilot/"
+      linkLabel: "View Credential"
     },
     {
-      title: "Cambridge Linguaskill General — B1",
-      issuer: "Cambridge English",
-      level: "B1",
-      details: {
-        overall: "B1",
-        averageScore: "159",
-        speaking: "B2",
-        writing: "B2"
-      },
-      url: null
+      title: "Cambridge Linguaskill English Test – CEFR B1",
+      url: "https://www.linkedin.com/feed/update/urn:li:activity:7437527749747040257/",
+      linkLabel: "View Credential"
     }
   ],
-  
+
   hackathons: [
     {
       name: "Smart India Hackathon 2026",
       team: "Skill Sale",
       description: "Contributed to the Skill Sale team project and collaborated on project planning and solution design.",
       participation: "Team Project",
-      github: "https://github.com/KL2400030145/SkillSale",
-      featured: true
+      github: "https://github.com/KL2400030145/SkillSale"
     },
     { name: "Smart India Hackathon (SIH) 2025" },
     { name: "Guidewire DevTrails Hackathon" },
     { name: "CodeFusion Hackathon" },
     { name: "Full Stack Development Hackathon" },
-    { name: "TechGig Hackathon" }
+    { name: "TechGig Hackathon" },
+    {
+      name: "DreamCraft – Hackathon 2026",
+      demo: "https://dream-craft-phi.vercel.app/"
+    }
   ],
-  
+
   activities: [
     {
-      title: "Cyber Security Club Member",
-      organization: "KL University",
+      title: "Vachas Club – Member",
+      organization: "Jun 2026 – Present",
       description: [
-        "Participated in cybersecurity awareness programs and technical workshops",
-        "Collaborated with club members on cybersecurity-related activities",
-        "Enhanced practical knowledge of cybersecurity concepts"
+        "Participate in activities promoting creativity and communication.",
+        "Collaborate with members and strengthen teamwork skills."
+      ]
+    },
+    {
+      title: "Cybersecurity Club – Member",
+      organization: "Mar 2025 – Dec 2025",
+      description: [
+        "Learn cybersecurity fundamentals and digital safety practices.",
+        "Explore information security concepts with club members."
       ]
     }
   ],
-  
+
   codingProfiles: [
-    {
-      platform: "LeetCode",
-      username: "kl_2400030145",
-      url: "https://leetcode.com/u/kl_2400030145/",
-      displayUrl: true
-    },
     {
       platform: "CodeChef",
       username: "kl_2400030145",
       url: "https://www.codechef.com/users/kl_2400030145",
+      displayUrl: true
+    },
+    {
+      platform: "LeetCode",
+      username: "kl_2400030145",
+      url: "https://leetcode.com/u/kl_2400030145/",
       displayUrl: true
     },
     {
@@ -179,25 +158,25 @@ export const portfolioData = {
       displayUrl: true
     }
   ],
-  
+
   languages: [
     "English",
     "Hindi",
     "Telugu",
     "Urdu",
-    "German (Currently Learning)"
+    "German (Basics)"
   ],
-  
+
   social: {
     github: "https://github.com/KL2400030145",
     linkedin: "https://www.linkedin.com/in/moghal-lithishma-begum-a63405366"
   },
-  
+
   terminalOutput: [
     { command: "whoami", response: "Lithishma Begum" },
     { command: "role", response: "CSE Student" },
-    { command: "focus", response: "Software Development" },
-    { command: "interests", response: "Data Science | Big Data Analytics | AI/ML | Cloud Computing" },
-    { command: "status", response: "Learning & Building" }
+    { command: "focus", response: "Software Engineering" },
+    { command: "interests", response: "Data Science | Big Data Analytics" },
+    { command: "status", response: "Seeking Internship Opportunities" }
   ]
 };

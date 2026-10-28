@@ -49,21 +49,14 @@ export default function Projects() {
               className="project-card card glow-hover"
             >
               <h3>{project.title}</h3>
-              <p className="project-description">{project.description}</p>
-
-              {project.keyPoints?.length > 0 && (
-                <div className="project-points">
-                  <h4>Highlights</h4>
-                  <ul>
-                    {project.keyPoints.map((point) => (
-                      <li key={point}>
-                        <span className="point-bullet" aria-hidden="true">▸</span>
-                        {point}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
+              <ul className="project-description project-description-list">
+                {project.description.map((point) => (
+                  <li key={point}>
+                    <span className="point-bullet" aria-hidden="true">▸</span>
+                    {point}
+                  </li>
+                ))}
+              </ul>
 
               <div className="project-tech">
                 <h4>Technologies</h4>

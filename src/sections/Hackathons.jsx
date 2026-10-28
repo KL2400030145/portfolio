@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Code, Code2 } from 'lucide-react';
+import { Code, Code2, ExternalLink } from 'lucide-react';
 import { portfolioData } from '../data/portfolioData';
 import './Hackathons.css';
 
@@ -42,10 +42,9 @@ export default function Hackathons() {
             <motion.article
               key={hackathon.name}
               variants={itemVariants}
-              className={`hackathon-item card${hackathon.featured ? ' hackathon-featured' : ''}`}
+              className="hackathon-item card"
             >
               <div className="hackathon-number" aria-hidden="true">{index + 1}</div>
-              {hackathon.featured && <span className="hackathon-featured-label">Featured</span>}
               <div className="hackathon-content">
                 <div className="hackathon-title-row">
                   <Code2 className="hackathon-icon" size={20} aria-hidden="true" />
@@ -58,25 +57,42 @@ export default function Hackathons() {
                       <span className="hackathon-team-type">{hackathon.participation}</span>
                     )}
                   </div>
+                  {hackathon.demo && (
+                    <a
+                      href={hackathon.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hackathon-demo-link"
+                    >
+                      <ExternalLink size={13} />
+                      Live Demo
+                    </a>
+                  )}
                 </div>
-                {hackathon.description && (
+                {typeof hackathon.description === 'string' && (
                   <p className="hackathon-description">{hackathon.description}</p>
                 )}
-                {hackathon.github && (
-                  <a
-                    href={hackathon.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn btn-small"
-                  >
-                    <Code size={14} />
-                    GitHub
-                  </a>
+                {Array.isArray(hackathon.description) && (
+                  <ul className="hackathon-description-list">
+                    {hackathon.description.map((point) => (
+                      <li key={point}>{point}</li>
+                    ))}
+                  </ul>
                 )}
+                {hackathon.github && (
+                    <div className="hackathon-links">
+                      <a
+                        href={hackathon.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn btn-small"
+                      >
+                        <Code size={14} />
+                        GitHub
+                      </a>
+                    </div>
+                  )}
               </div>
-              {!hackathon.featured && (
-                <span className="participation-badge">Participant</span>
-              )}
             </motion.article>
           ))}
         </motion.div>

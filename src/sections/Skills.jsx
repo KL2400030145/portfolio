@@ -6,13 +6,13 @@ import './Skills.css';
 
 export default function Skills() {
   const iconMap = {
-    'Programming Languages': Code,
-    'Web Technologies': Code,
+    Programming: Code,
+    Frontend: Code,
     'Core CS': Zap,
-    'Cloud & Infrastructure': Cloud,
-    'Backend & APIs': Database,
-    'Databases': Database,
-    'Soft Skills': Zap,
+    'Cloud and Tools': Cloud,
+    Backend: Database,
+    Databases: Database,
+    'Data Science': Zap,
   };
 
   const containerVariants = {

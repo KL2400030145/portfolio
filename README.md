@@ -131,8 +131,9 @@ Each section has its own CSS file for component-specific styling.
 
 ### Updating the Resume
 
-Replace `public/resume.pdf` with the current resume PDF. The hero section provides
-a view link that opens the PDF in a new tab and a download link to the same file.
+`public/MOGHAL_LITHISHMA_BEGUM_RESUME.pdf` is the current resume PDF. The hero
+section and navigation provide a view link and a download link using the same
+uppercase filename. Replace this file with the latest PDF to update both links.
 
 ## 🎨 Color Scheme
 

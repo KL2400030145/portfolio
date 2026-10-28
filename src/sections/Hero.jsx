@@ -100,11 +100,15 @@ export default function Hero() {
               <a href="#projects" className="btn btn-filled">
                 View Projects
               </a>
-              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="btn">
+              <a href="/MOGHAL_LITHISHMA_BEGUM_RESUME.pdf" target="_blank" rel="noopener noreferrer" className="btn">
                 <Eye size={18} />
                 View Resume
               </a>
-              <a href="/resume.pdf" download="Lithishma_Begum_Resume_2400030145.pdf" className="btn">
+              <a
+                href="/MOGHAL_LITHISHMA_BEGUM_RESUME.pdf"
+                download="MOGHAL_LITHISHMA_BEGUM_RESUME.pdf"
+                className="btn"
+              >
                 <Download size={18} />
                 Download Resume
               </a>

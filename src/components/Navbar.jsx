@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Download, Menu, X } from 'lucide-react';
 import './Navbar.css';
 
 const navItems = [
-  'Home',
-  'About',
-  'Education',
-  'Skills',
-  'Projects',
-  'Certifications',
-  'Hackathons',
-  'Profiles',
-  'Contact'
+  { label: 'Portfolio', id: 'home' },
+  { label: 'About', id: 'about' },
+  { label: 'Education', id: 'education' },
+  { label: 'Skills', id: 'skills' },
+  { label: 'Projects', id: 'projects' },
+  { label: 'Certifications', id: 'certifications' },
+  { label: 'Hackathons', id: 'hackathons' },
+  { label: 'Profiles', id: 'profiles' },
+  { label: 'Contact', id: 'contact' }
 ];
 
 export default function Navbar() {
@@ -19,7 +19,7 @@ export default function Navbar() {
   const [activeSection, setActiveSection] = useState('home');
 
   useEffect(() => {
-    const sectionIds = navItems.map((item) => item.toLowerCase());
+    const sectionIds = navItems.map((item) => item.id);
     const sections = sectionIds
       .map((id) => document.getElementById(id))
       .filter(Boolean);
@@ -68,17 +68,27 @@ export default function Navbar() {
         </button>
 
         <ul id="portfolio-navigation" className={`nav-menu ${isOpen ? 'active' : ''}`}>
-          {navItems.map((item) => (
-            <li key={item} className="nav-item">
+          {navItems.map(({ label, id }) => (
+            <li key={id} className="nav-item">
               <button
                 className="nav-link"
-                onClick={() => scrollToSection(item)}
-                aria-current={activeSection === item.toLowerCase() ? 'location' : undefined}
+                onClick={() => scrollToSection(id)}
+                aria-current={activeSection === id ? 'location' : undefined}
               >
-                {item}
+                {label}
               </button>
             </li>
           ))}
+          <li className="nav-item">
+            <a
+              href="/MOGHAL_LITHISHMA_BEGUM_RESUME.pdf"
+              download="MOGHAL_LITHISHMA_BEGUM_RESUME.pdf"
+              className="btn btn-small navbar-resume"
+            >
+              <Download size={15} />
+              Download Resume
+            </a>
+          </li>
         </ul>
       </div>
     </nav>
